@@ -1,4 +1,4 @@
-const ENDPOINT = 'http://hp-api.herokuapp.com/api/characters';
+const ENDPOINT = "http://hp-api.herokuapp.com/api/characters";
 
 export default () => {
   return fetch(ENDPOINT)

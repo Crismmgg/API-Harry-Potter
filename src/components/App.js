@@ -19,7 +19,7 @@ class App extends React.Component {
       inputGender: '',
       checked: '',
       inputValue: '',
-      loading: true
+      loading: false
     }
   }
 
@@ -101,7 +101,7 @@ class App extends React.Component {
         {this.state.loading
           ? (<Loader />)
           : (<Switch>
-            <Route exact path='/'>
+            <Route exact path="/">
               <Header
                 handleGender={this.handleGender}
                 checked={this.state.inputGender}
@@ -114,7 +114,7 @@ class App extends React.Component {
                 characters={this.filterChar()}
               />
             </Route>
-            <Route path='/char/:name'
+            <Route path="/char/:name"
               render={this.renderCharDetails}>
             </Route>
           </Switch>)
