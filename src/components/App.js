@@ -19,7 +19,7 @@ class App extends React.Component {
       inputGender: '',
       checked: '',
       inputValue: '',
-      loading: false
+      loading: true
     }
   }
 
